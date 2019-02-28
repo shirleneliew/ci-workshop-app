@@ -41,7 +41,15 @@ jobs:
       - run:
           name: deploy app to staging
           command: bin/deploy_to_heroku.sh ci-workshop-app-snl-staging
-
+  deploy_prod:
+    docker:
+      - image: circleci/python:3.6.1
+    steps:
+      - attach_workspace:
+          at: .
+      - run:
+          name: deploy app to prod
+          command: bin/deploy_to_heroku.sh ci-workshop-app-snl-prod
 
 workflows:
   version: 2
