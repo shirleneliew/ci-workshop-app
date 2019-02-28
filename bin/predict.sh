@@ -15,8 +15,8 @@ curl --request POST "$base_url/predict" \
      --header "Content-Type: application/json" \
      --data \
               '{ 
-                "AGE": 65.2,
-                "B": 396.9,
+                "AGE": 205,
+                "B": 1,
                 "CHAS": 0,
                 "CRIM": 0.00632,
                 "DIS": 4.09,
@@ -24,7 +24,7 @@ curl --request POST "$base_url/predict" \
                 "LSTAT": 4.98,
                 "NOX": 0.538,
                 "PTRATIO": 15.3,
-                "RAD": 1.0,
+                "RAD": 7.0,
                 "RM": 6.575,
                 "TAX": 296,
                 "ZN": 18 
