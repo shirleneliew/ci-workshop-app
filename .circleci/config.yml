@@ -40,7 +40,7 @@ jobs:
           at: .
       - run:
           name: deploy app to staging
-          command: bin/deploy_to_heroku.sh ci-workshop-app-bob-staging
+          command: bin/deploy_to_heroku.sh ci-workshop-app-snl-staging
 
 
 workflows:
